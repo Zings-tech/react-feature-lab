@@ -1,0 +1,55 @@
+/* ── Home Container ───────────────────────────── */
+.home-container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 24px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-container h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1c1c1e;
+  margin-bottom: 24px;
+}
+
+/* ── Project List ─────────────────────────────── */
+.project-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-list li {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 16px 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.project-list li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);
+}
+
+/* ── Links ────────────────────────────────────── */
+.project-list a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.project-list a:hover {
+  color: #1a6fa8;
+}
+
+/* ── Disabled Link ────────────────────────────── */
+.disabled-link {
+  color: #aaa !important;
+  cursor: not-allowed;
+  pointer-events: none;
+}
