@@ -1,22 +1,13 @@
-import { useState } from "react";
-import { initialProducts } from '../data/products';
+import { Link } from 'react-router-dom';
 import { ProductCard } from '../components/ProductCard';
 
-export function WishlistCatalog () {
-  const [products, setProducts] = useState(initialProducts);
-
-  function toggleFavorite(id) {
-    setProducts(products.map(product =>
-      product.id === id
-        ? { ...product, isFavorite: !product.isFavorite }
-        : product
-    ));
-  }
-
+export function WishlistCatalog({ products, toggleFavorite }) {
   return (
     <div>
       <h1>Product Catalog</h1>
-      <p>Favorited: {products.filter(p => p.isFavorite).length}</p>
+      <Link to="/wishlist">
+        ❤️ My Wishlist ({products.filter(p => p.isFavorite).length})
+      </Link>
       {products.map(product => (
         <ProductCard
           key={product.id}

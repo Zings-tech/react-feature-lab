@@ -10,7 +10,7 @@ export default function Home() {
           <Link to="/cart-manager">🛒 Shopping Cart Manager</Link>
         </li>
         <li>
-          <Link to="/wishlist" >🌠 Wishlist Mini App</Link>
+          <Link to="/wishlist-system" >🌠 Wishlist Mini App</Link>
         </li>
       </ul>
     </div>
