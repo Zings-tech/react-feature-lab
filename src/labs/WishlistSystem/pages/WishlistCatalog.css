@@ -1,0 +1,50 @@
+.catalog-container {
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.catalog-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.catalog-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.wishlist-count {
+  font-size: 1rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.wishlist-link {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.wishlist-link:hover {
+  background-color: #c0392b;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}

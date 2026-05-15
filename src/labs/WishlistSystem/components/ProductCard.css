@@ -1,0 +1,57 @@
+.product-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  transition: transform 0.2s;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.product-category {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.wishlist-btn {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: background-color 0.2s;
+}
+
+.wishlist-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wishlist-btn.wishlisted {
+  background-color: rgba(231, 76, 60, 0.3);
+  color: #e74c3c;
+  font-weight: bold;
+}
